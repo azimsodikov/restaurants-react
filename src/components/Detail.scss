@@ -1,0 +1,54 @@
+@import "../App.scss";
+
+.detail {
+  display: block;
+  width: 100%;
+  .label {
+    background-color: $color-primary-dark;
+    height: 6rem;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 12px;
+    font-size: 1.6rem;
+    .title {
+      font-weight: 600;
+    }
+    @include respond(phone) {
+      font-size: 1.6rem;
+      height: 6rem;
+    }
+    @include respond(tablet) {
+      font-size: 2rem;
+      height: 8rem;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      @include respond(phone) {
+        font-size: 1.2rem;
+      }
+      @include respond(tablet) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .contact {
+    padding: 1.6rem 1.2rem;
+    font-size: 1.6rem;
+    @include respond(phone) {
+      font-size: 1.6rem;
+      height: 6rem;
+    }
+    @include respond(tablet) {
+      font-size: 2rem;
+      height: 8rem;
+    }
+    .address {
+      padding-bottom: 2.6rem;
+    }
+    .phone {
+      padding-bottom: 2.6rem;
+    }
+  }
+}

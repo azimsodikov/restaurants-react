@@ -1,0 +1,14 @@
+@import "../App.scss";
+
+.map-container {
+  height: 180px;
+  @include respond(tablet) {
+    height: 240px;
+  }
+  div.small {
+    height: 180px !important;
+    @include respond(tablet) {
+      height: 240px !important;
+    }
+  }
+}
